@@ -174,5 +174,43 @@ void main()
             break;
         }
 }}
-
 Q7
+
+
+Q8
+#include<stdio.h>
+int main()
+{
+    char ch;int a,b,c;
+    printf("enter \n'+' to add \n'-' to subtract \n'/' to divide\n'*' to multiply\n'%%' to find remainder of two number\n");
+    scanf("%c",&ch);
+    printf("Enter two numbers");
+    scanf("%d%d",&a,&b);
+    switch(ch)
+    {
+        case '+':
+        c=a+b;
+        printf("addition of two number is %d",c);
+        break;
+        case '-':
+        c=a-b;
+        printf("subtraction of two number is %d",c);
+        break;
+        case '/':
+        c=a/b;
+        printf("Divition of two number is %d",c);
+        break;
+        case '*':
+        c=a*b;
+        printf("multiplication of two number is %d",c);
+        break;
+        case '%':
+        c=a%b;
+        printf("remainder of two number is %d",c);
+        break;
+        default:
+        printf("Does not exist");
+        break;
+    }
+    
+}
