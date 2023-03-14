@@ -1,72 +1,52 @@
 Q1 
-#include <stdio.h>
-int main()
-{
-    int a,b;
-    printf("Enter two number to find which one is maximum\n");
-    scanf("%d%d",&a,&b);
-    printf("numbers entered is %d and %d\n",a,b);
-    if (a>b)
-    printf("maximum number is %d",a);
-    else
-    printf("maximum number is %d",b);
-}
-
-Q2
-#include <stdio.h>
+# include <stdio.h>
+# include <math.h>
 int main()
 {
     int a,b,c;
-    printf("Enter three number to find which one is maximum\n");
-    scanf("%d%d%d",&a,&b,&c);
-    printf("numbers entered is %d,%d and %d\n ",a,b,c);
-    if ((a>b)&&(a>c))
-    printf("maximum number is %d",a);
-    else if ((b>a)&&(b>c))
-    printf("maximum number is %d",b);
-    else 
-    printf("maximum number is %d",c);
+    scanf("%d%d%d", &a,&b,&c);
+    a>b && a>c ? printf("Maximum is %d",a): b>c ? printf("Maximum is %d",b) : printf("Maximum is %d",c);
+    return 0;
 }
 
+Q2
+# include <stdio.h>
+# include <math.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d%d%d", &a,&b,&c);
+    a>b && a>c ? printf("Maximum is %d",a): b>c ? printf("Maximum is %d",b) : printf("Maximum is %d",c);
+    return 0;
+}}
+
 Q3
-#include <stdio.h>
+# include <stdio.h>
 int main()
 {
     int a;
-    printf("Enter number to find weither it is odd or even\n");
     scanf("%d",&a);
-    printf("numbers entered is %d\n",a);
-    if (a%2==0)
-    printf("Tt is an even number");
-    else
-    printf("It is a odd number");
+    a%2==0 ? printf("even") : printf("odd");
+    return 0;
 }
 
 Q4
 #include <stdio.h>
 int main()
 {
-    int a;
-    printf("Enter number to find weither it is odd or even\n");
-    scanf("%d",&a);
-    printf("numbers entered is %d\n",a);
-    if (a%400==0)
-    printf("It is a leap year");
-    else
-    printf("It is not a leap year");
+    int year;
+    scanf("%d", &year);
+    year % 400 == 0 || year % 4 == 0 ? printf("It is a leap year") : printf("It is not a leap year");
+    return 0;
 }
 
 Q5
-#include <stdio.h>
+# include <stdio.h>
 int main()
 {
-    char a;int x;
-    printf("Enter number to find weither it is odd or even\n");
-    scanf("%c",&a);
-    printf("entered character is %c\n",a);
-    x=("%d",a);
-    if ((x>=65 && x<=90)||(a>=97 && a<=122))
-    printf("It is an aplhabet");
-    else
-    printf("It is not an alphabet");
+    char a,b;
+    scanf("%c", &a);
+    b=("%d",a);
+    (b>=65 && b<=90) || (b>=97 && b<=122) ? printf("It is an alphabet") : printf("It is not an alphabet");
+    return 0;
 }
