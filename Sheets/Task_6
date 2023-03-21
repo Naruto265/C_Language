@@ -104,6 +104,22 @@ int main()
 }
 
 6.perfect number
+#include<stdio.h>
+int main()
+{
+    int a,x=0;
+    printf("Enter a number ");
+    scanf("%d",&a);
+    for(int i=1;i<a;i++)
+    {
+        if (a%i==0)
+        x=x+i;
+    }
+    if (x==a)
+    printf("It is a perfect number");
+    else
+    printf("It is not a perfect number");
+}
 7.Strong number
 8.Fabonaci series
 9.Sum of digits
