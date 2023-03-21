@@ -1,1 +1,18 @@
+Q1
+#include <stdio.h>
+
+int main()
+{
+    int i,n=1;
+    printf(" Enetr the range of natural number ");
+    scanf("%d",&i);
+    while(n<=i)
+    {
+        printf("%d ",n);
+        n++;
+    }
+
+    return 0;
+}
+
 
