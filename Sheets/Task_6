@@ -122,6 +122,19 @@ int main()
 }
 7.Strong number
 8.Fabonaci series
+#include <stdio.h>
+int main()
+{
+    int n,y=0;
+    printf("Enter a number ");
+    scanf("%d",&n);
+    for(int i=0;i<=n;i++)
+    {
+        y=y+i;
+        printf("%d ",y);
+        y=i;
+    }
+}
 9.Sum of digits
 #include <stdio.h>
 #include<math.h>
