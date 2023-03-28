@@ -121,6 +121,29 @@ int main()
     printf("It is not a perfect number");
 }
 7.Strong number
+#include <stdio.h>
+int main()
+{
+    int n,f,a,b,c,i;
+    printf("Enter a number ");
+    scanf("%d",&n);
+    c=n;
+while(n){
+   i = 1,f = 1;
+   a = n % 10;
+   while(i <= a){
+      f = f * i;
+      i++;
+   }
+   b = b + f;
+   n = n / 10;
+}
+if(b == c)
+   printf("%d is a strong number",c);
+else
+   printf("%d is not a strong number",c);
+}
+
 8.Fabonaci series
 #include <stdio.h>
 int main()
