@@ -99,7 +99,7 @@ int main()
         if(n1%i==0 && n2%i==0)
         g=(n1*n2)/i;
     }
-    printf("GCD of the numbers is %d",g);
+    printf("LCM of the numbers is %d",g);
     
 }
 
