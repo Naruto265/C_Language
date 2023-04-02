@@ -152,3 +152,4 @@ int main()
     printf("%d",i);
     return 0;
 }
+Q11)Write a C program to find first and last digit of a number.
