@@ -153,3 +153,21 @@ int main()
     printf("total number of negative values are %d",t)
     return 0;
 }
+Q8)copy array to another array
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter the size of the array\n");
+    scanf("%d",&n);
+    int a[n];
+    printf("Enter the number\n");
+    for(int i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    for(int i=0;i<n;i++)
+    printf("original array at %d is %d\n",i,a[i]);
+    for(int j=0;j<n;j++)
+    printf("array after being copyed at %d is %d\n",j,a[j]);
+    return 0;
+}
+Q9)insert an element in an array
