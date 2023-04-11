@@ -1,1 +1,18 @@
+Q Table 1
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
+int main() {
+    int n,i=1,x;
+    scanf("%d",&n);
+    scanf("%d",&x);
+    while(i<=10)
+    {
+        printf("%d\n",n*i);
+        i++;
+    }
+    return 0;
+}
+Q Odd numbers 3
