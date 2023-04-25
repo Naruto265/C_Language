@@ -220,3 +220,38 @@ int main()
    return 0;
 }
 Q11)Frequency of an element
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter the size\n");
+    scanf("%d",&n);
+    int arr[n],f=-1,count,fr[n];
+    printf("Enter array elements \n");
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++)
+    {
+        count=1;
+        for(int j=i+1;j<n;j++)
+        {
+            if(arr[i]==arr[j])
+            {
+                count++;
+                fr[j]=f;
+            }
+        }
+        if (fr[i]!=f)
+        fr[i]=count;
+    }
+    for(int i=0;i<n;i++)
+    {
+        if(fr[i]!=f)
+        printf("%d",arr[i]);
+        printf("    ");    
+        printf("%d\n",fr[i]);
+    }
+}
+Q Unique element in a array
