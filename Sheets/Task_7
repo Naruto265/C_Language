@@ -230,28 +230,20 @@ int main()
     printf("Enter array elements \n");
     for(int i=0;i<n;i++)
     {
+        printf("Enter element of arr[%d]:",i);
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++)
     {
-        count=1;
-        for(int j=i+1;j<n;j++)
+        count=0;
+        for(int j=0;j<n;j++)
         {
             if(arr[i]==arr[j])
             {
                 count++;
-                fr[j]=f;
+                
             }
         }
-        if (fr[i]!=f)
-        fr[i]=count;
-    }
-    for(int i=0;i<n;i++)
-    {
-        if(fr[i]!=f)
-        printf("%d",arr[i]);
-        printf("    ");    
-        printf("%d\n",fr[i]);
-    }
-}
+       printf("frequency of %d is %d\n",arr[i],count);
+    }}
 Q Unique element in a array
