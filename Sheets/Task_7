@@ -247,3 +247,204 @@ int main()
        printf("frequency of %d is %d\n",arr[i],count);
     }}
 Q Unique element in a array
+#include <stdio.h>
+int main()
+{
+    int arr[5];
+    int i, j, n, count;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+    printf("Enter the elements of the array: ");
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    for (i = 0; i < n; i++)
+    {
+        count = 1;
+        for (j = i + 1; j < n; j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                count++;
+                arr[j] = -1;
+            }
+        }
+        if (arr[i] != -1 && count == 1)
+        {
+            printf("%d ", arr[i]);
+        }
+    }
+    return 0;
+}
+Q Total numbers of Duplicats
+#include<stdio.h>
+int main()
+{
+    int a[100],i,j,n,count=0;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    printf("Enter the elements of array:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]==a[j])
+            {
+                count++;
+            }
+        }
+    }
+    printf("Total no of duplicate elements in an array is:%d",count);
+    return 0;
+}
+Q Dlelte All Duplicates
+#include<stdio.h>
+int main()
+{
+    int a[100],i,j,n,count=0;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    printf("Enter the elements of array:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]==a[j])
+            {
+                count++;
+            }
+        }
+    }
+    printf("Total no of duplicate elements in an array is:%d",count);
+    return 0;
+}
+
+Q Merge two array to third Array
+#include<stdio.h>
+int main()
+{
+    int a[100],b[100],c[100],i,j,n1,n2;
+    printf("Enter the size of first array:");
+    scanf("%d",&n1);
+    printf("Enter the elements of first array:");
+    for(i=0;i<n1;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("Enter the size of second array:");
+    scanf("%d",&n2);
+    printf("Enter the elements of second array:");
+    for(i=0;i<n2;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    for(i=0;i<n1;i++)
+    {
+        c[i]=a[i];
+    }
+    for(i=0;i<n2;i++)
+    {
+        c[i+n1]=b[i];
+    }
+    printf("The elements of third array are:");
+    for(i=0;i<n1+n2;i++)
+    {
+        printf("%d ",c[i]);
+    }
+    return 0;
+}
+Q Find Reverse of an array
+#include<stdio.h>
+int main()
+{
+    int a[100],i,j,n;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    printf("Enter the elements of array:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=n-1;i>=0;i--)
+    {
+        printf("%d ",a[i]);
+    }
+    return 0;
+}
+
+
+Q Search an element in an array
+#include<stdio.h>
+int main()
+{
+    int a[100],i,j,n;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    printf("Enter the elements of array:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("Enter the element to be searched:");
+    scanf("%d",&j);
+    for(i=0;i<n;i++)
+    {
+        if(a[i]==j)
+        {
+            printf("The element is found at position %d",i+1);
+            break;
+        }
+    }
+    if(i==n)
+    {
+        printf("The element is not found");
+    }
+    return 0;
+}
+
+Q sort array element in ascending or desending order
+#include<stdio.h>
+int main()
+{
+    int a[100],i,j,n;
+    printf("Enter the size of array:");
+    scanf("%d",&n);
+    printf("Enter the elements of array:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]>a[j])
+            {
+                int temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+    }
+    printf("The elements of array in ascending order are:");
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",a[i]);
+    }
+    printf("The elements of array in descending order are:");
+    for(i=n-1;i>=0;i--)
+    {
+        printf("%d ",a[i]);
+    }
+    return 0;
+}
+Q 
