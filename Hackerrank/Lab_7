@@ -1,0 +1,18 @@
+## Eliminate Vowels
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char a[100];
+    scanf("%s",a);
+    int b = strlen(a);
+    for (int i=0;i<b;i++){
+        if ((a[i]!='a') && (a[i]!='e')&&(a[i]!='o')&&(a[i]!='i')&&(a[i]!='u') && (a[i]!='A') &&(a[i]!='E')&&(a[i]!='O')&&(a[i]!='I')&&(a[i]!='U')){
+        printf("%c",a[i]);
+    }
+        }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
