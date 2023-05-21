@@ -121,3 +121,67 @@ int main() {
         printf("Not Palindrome.");
     return 0;
 }
+Q Check power
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,a;
+    scanf("%d",&n);
+    a= 1;
+    for (int i=0;i<n;i++)
+    {
+        if (a==n){
+            printf("1");
+            break;
+        }
+        a*=2;
+    }
+    if (a!=n){
+        printf("0");
+    }
+    return 0;
+}
+Q Sum of Digits 38
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,n,s=0,m,i;
+    scanf("%d",&a);
+    for (i = 1;i<=a;i++){
+        scanf("%d",&n);
+        while(n>0){
+            m = n%10;
+            s = s+m;
+            n = n/10;
+        }
+        printf ("%d\n",s);
+        s = 0;
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+Q Min vs Max 1
+
+Q natural number series
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,s=0;
+    scanf("%d",&a);
+    for (int i=0;i<=a;i++){
+        s = s+i;
+    }
+    printf("%d",s);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
