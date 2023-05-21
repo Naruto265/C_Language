@@ -153,3 +153,146 @@ int main()
     return 0;
 }
 Q11)Write a C program to find first and last digit of a number.
+#include<stdio.h>
+int main()
+{
+    int n,first,last;
+    printf("Enter the value of n:");
+    scanf("%d",&n);
+    last=n%10;
+    while(n>0)
+    {
+        first=n%10;
+        n=n/10;
+    }
+    printf("The first digit is %d and the last digit is %d",first,last);
+    return 0;
+}
+Q12)Write a C program to find sum of first and last digit of a number.
+#include<stdio.h>
+int main()
+{
+    int n,first,last,sum;
+    printf("Enter the value of n:");
+    scanf("%d",&n);
+    last=n%10;
+    while(n>0)
+    {
+        first=n%10;
+        n=n/10;
+    }
+    sum=first+last;
+    printf("The sum of first digit and the last digit is %d",sum);
+    return 0;
+}
+Q13)Write a C program to swap first and last digits of a number.
+#include<stdio.h>
+int main()
+{
+    int n,first,last,swap;
+    printf("Enter the value of n:");
+    scanf("%d",&n);
+    last=n%10;
+    while(n>0)
+    {
+        first=n%10;
+        n=n/10;
+    }
+    swap=last;
+    last=first;
+    first=swap;
+    printf("The first digit is %d and the last digit is %d",first,last);
+    return 0;
+}
+Q14)Write a C program to calculate sum of digits of a number.
+#include<stdio.h>
+int main()
+{
+    int n,sum=0;
+    printf("Enter the value of n:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        sum=sum+n%10;
+        n=n/10;
+    }
+    printf("The sum of digits is %d",sum);
+    return 0;
+}
+Q15)Write a C program to calculate product of digits of a number.
+#include<stdio.h>
+int main()
+{
+    int n,product=1;
+    printf("Enter the value of n:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        product=product*(n%10);
+        n=n/10;
+    }
+    printf("The product of digits is %d",product);
+    return 0;
+}
+Q16)Write a C program to enter a number and print its reverse.
+#include<stdio.h> 
+int main()
+{
+    int n,rev=0,rem,temp;
+    printf("Enter the value of n:");
+    scanf("%d",&n);
+    temp=n;
+    while(n>0)
+    {
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+    }
+    printf("The reverse of the number %d is %d",n,rev);
+    return 0;
+}
+Q17)Write a C program to check whether a number is palindrome or not.
+#include<stdio.h> 
+int main()
+{
+    int n,rev=0,rem,temp;
+    printf("Enter the value of n:");
+    scanf("%d",&n);
+    temp=n;
+    while(n>0)
+    {
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+    }
+    if(temp==rev)
+    {
+        printf("The number is palindrome");
+    }
+    else
+    {
+        printf("The number is not palindrome");
+    }
+    return 0;
+}
+Q18)Write a C program to find frequency of each digit in a given integer.
+
+Q19)Write a C program to enter a number and print it in words.
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("%d=%c\n",i,i);
+    return 0;
+}
+Q20)Write a C program to print all ASCII character with their values.
+#include<stdio.h>
+int main()
+{
+    int i;
+    for(i=0;i<=255;i++)
+    {
+        printf("%d=%c\n",i,i);
+    }
+    return 0;
+}
